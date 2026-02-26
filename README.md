@@ -55,9 +55,9 @@ Download Git:
 https://git-scm.com/downloads
 
 After install:
-'''bash
+```bash
 git --version 
-'''
+```
 
 If version shows, it's installed.
 
@@ -74,14 +74,14 @@ https://ollama.com/download
 Install normally.
 
 After installation, open terminal and check:
-'''bash
+```bash
 ollama --version
- '''
+ ```
 
 Now start Ollama server:
-'''bash
+```bash
 ollama serve 
-'''
+```
 
 IMPORTANT:
 - This runs the local AI server.
@@ -97,28 +97,28 @@ If port error appears, Ollama is already running.
 You must download a model before using AI.
 
 Recommended model:
-'''bash
+```bash
 ollama pull deepseek-coder:6.7b 
-'''
+```
 
 OR lighter model (better for 8GB RAM machines):
-'''bash
+```bash
 ollama pull qwen:3b 
-'''
+```
 
 
 Test model:
-'''bash
+```bash
 ollama run deepseek-coder:6.7b 
-'''
+```
 
 
 If it responds, it works.
 
 Exit model:
-'''bash
+```bash
 /bye
- '''
+ ```
 
 
 ---
@@ -126,11 +126,11 @@ Exit model:
 # 5️⃣ Clone This Project
 
 Now clone this repository:
-'''bash
+```bash
  git clone https://github.com/YOUR_USERNAME/obsidian-local-ai.git
 
 cd obsidian-local-ai 
-'''
+```
 
 
 IMPORTANT:
@@ -146,9 +146,9 @@ Example correct path:
 # 6️⃣ Install Python Dependencies
 
 Inside project folder:
-'''bash
+```bash
  pip install -r requirements.txt
-  '''
+  ```
 
 This installs:
 - requests
@@ -174,20 +174,22 @@ You can change model name here if needed.
 Aider allows AI to edit your code automatically.
 
 Install Aider:
-'''bash
+```bash
 pip install aider-chat 
-'''
+```
 
 
 To use Aider with Ollama:
 
 Go inside your project folder:
+```bash 
 cd obsidian-local-ai
+```
 
 Run :
-'''bash
+```bash
 python -m aider --model ollama/deepseek-coder:6.7b 
-'''
+```
 
 
 Important:
@@ -198,9 +200,9 @@ Important:
 Example:
 
 Inside folder:
-'''bash
+```bash
 create a file called test.txt that says hello world 
-'''
+```
 
 
 It will:
@@ -244,29 +246,29 @@ Check:
 # Example Full Workflow
 
 Start Ollama:
-'''bash
+```bash
 ollama serve 
-'''
+```
 
 
 Open new terminal.
 
 Go to project:
-'''bash
+```bash
 cd obsidian-local-ai
- '''
+ ```
 
 
 Run summarize:
-'''bash
+```bash
  python -m main summarize note.md
-  '''
+  ```
 
 
 Run Aider:
-'''bash
+```bash
  python -m aider --model ollama/deepseek-coder:6.7b 
- '''
+ ```
 
 
 ---
