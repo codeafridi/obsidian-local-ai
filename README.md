@@ -158,11 +158,13 @@ This installs:
 # 8️⃣ Configuration
 
 Open config.json:
+```bash
 {
 "model": "deepseek-coder:6.7b",
 "ollama_url": "http://localhost:11434/api/generate
 "
 }
+```
 
 
 You can change model name here if needed.
