@@ -36,7 +36,9 @@ Important:
 ✔ Check "Add Python to PATH" during install  
 
 After install, open terminal (CMD or PowerShell) and check:
-'''python --version '''
+'''bash 
+python --version 
+'''
 
 
 You should see something like:
@@ -53,7 +55,9 @@ Download Git:
 https://git-scm.com/downloads
 
 After install:
-'''git --version '''
+'''bash
+git --version 
+'''
 
 If version shows, it's installed.
 
@@ -70,10 +74,14 @@ https://ollama.com/download
 Install normally.
 
 After installation, open terminal and check:
-'''ollama --version '''
+'''bash
+ollama --version
+ '''
 
 Now start Ollama server:
-'''ollama serve '''
+'''bash
+ollama serve 
+'''
 
 IMPORTANT:
 - This runs the local AI server.
@@ -89,20 +97,28 @@ If port error appears, Ollama is already running.
 You must download a model before using AI.
 
 Recommended model:
-'''ollama pull deepseek-coder:6.7b '''
+'''bash
+ollama pull deepseek-coder:6.7b 
+'''
 
 OR lighter model (better for 8GB RAM machines):
-'''ollama pull qwen:3b '''
+'''bash
+ollama pull qwen:3b 
+'''
 
 
 Test model:
-'''ollama run deepseek-coder:6.7b '''
+'''bash
+ollama run deepseek-coder:6.7b 
+'''
 
 
 If it responds, it works.
 
 Exit model:
-'''/bye '''
+'''bash
+/bye
+ '''
 
 
 ---
@@ -110,23 +126,29 @@ Exit model:
 # 5️⃣ Clone This Project
 
 Now clone this repository:
-''' git clone https://github.com/YOUR_USERNAME/obsidian-local-ai.git
+'''bash
+ git clone https://github.com/YOUR_USERNAME/obsidian-local-ai.git
 
-cd obsidian-local-ai '''
+cd obsidian-local-ai 
+'''
 
 
 IMPORTANT:
 You must run all Python commands inside this folder.
 If you run from another folder, it will not work.
 Example correct path: 
-''' C:\Users\YourName\obsidian-local-ai> '''
+'''bash
+ C:\Users\YourName\obsidian-local-ai> 
+ '''
 
 ---
 
 # 6️⃣ Install Python Dependencies
 
 Inside project folder:
-''' pip install -r requirements.txt '''
+'''bash
+ pip install -r requirements.txt
+  '''
 
 This installs:
 - requests
@@ -152,7 +174,9 @@ You can change model name here if needed.
 Aider allows AI to edit your code automatically.
 
 Install Aider:
-'''pip install aider-chat '''
+'''bash
+pip install aider-chat 
+'''
 
 
 To use Aider with Ollama:
@@ -161,7 +185,9 @@ Go inside your project folder:
 cd obsidian-local-ai
 
 Run :
-'''python -m aider --model ollama/deepseek-coder:6.7b '''
+'''bash
+python -m aider --model ollama/deepseek-coder:6.7b 
+'''
 
 
 Important:
@@ -172,7 +198,9 @@ Important:
 Example:
 
 Inside folder:
-'''create a file called test.txt that says hello world '''
+'''bash
+create a file called test.txt that says hello world 
+'''
 
 
 It will:
@@ -216,21 +244,29 @@ Check:
 # Example Full Workflow
 
 Start Ollama:
-'''ollama serve '''
+'''bash
+ollama serve 
+'''
 
 
 Open new terminal.
 
 Go to project:
-'''cd obsidian-local-ai '''
+'''bash
+cd obsidian-local-ai
+ '''
 
 
 Run summarize:
-''' python -m main summarize note.md '''
+'''bash
+ python -m main summarize note.md
+  '''
 
 
 Run Aider:
-''' python -m aider --model ollama/deepseek-coder:6.7b '''
+'''bash
+ python -m aider --model ollama/deepseek-coder:6.7b 
+ '''
 
 
 ---
