@@ -137,9 +137,9 @@ IMPORTANT:
 You must run all Python commands inside this folder.
 If you run from another folder, it will not work.
 Example correct path: 
-'''bash
+```bash
  C:\Users\YourName\obsidian-local-ai> 
- '''
+ ```
 
 ---
 
