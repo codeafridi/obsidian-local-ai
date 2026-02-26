@@ -36,9 +36,9 @@ Important:
 ✔ Check "Add Python to PATH" during install  
 
 After install, open terminal (CMD or PowerShell) and check:
-'''bash 
+```bash 
 python --version 
-'''
+```
 
 
 You should see something like:
