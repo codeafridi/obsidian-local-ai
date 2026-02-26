@@ -127,7 +127,7 @@ Exit model:
 
 Now clone this repository:
 ```bash
- git clone https://github.com/YOUR_USERNAME/obsidian-local-ai.git
+ git clone https://github.com/codeafridi/obsidian-local-ai
 
 cd obsidian-local-ai 
 ```
